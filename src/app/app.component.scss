@@ -1,0 +1,28 @@
+mat-toolbar {
+  padding: 2rem;
+  align-items: start;
+  flex: 0 1 8rem;
+}
+
+mat-sidenav-container {
+  flex: 1 1 auto;
+}
+mat-sidenav-content {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-inline: 2rem;
+  min-width: 100%;
+  width: fit-content;
+}
+mat-sidenav {
+  padding-inline: 2rem;
+  width: 12rem;
+}
+app-list-card {
+  flex: 1;
+  min-height: 32rem;
+  height: 100%;
+  max-width: 24rem;
+  min-width: 16rem;
+}

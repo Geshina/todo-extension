@@ -1,27 +1,49 @@
-# TodoExtension
+# Angular Google Tasks Extension
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
+graphic interface to replace the plain home tab with the to-do from your google tasks
 
-## Development server
+[Github Repo](https://github.com/Geshina/todo-extension)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## To-do
 
-## Code scaffolding
+- [x] Architecture
+- [ ] update readme
+- [ ] get on with commits
+- [ ] UI | material | existing components
+- [ ] AUTH
+- [ ] Local storage
+- [ ] Google tasks API
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Serivces
 
-## Build
+- Auth - used to authenticated the user and provide a secure access to the users tasks
+- localStorage - to caches data and serves as backup for offline
+- googleTasks - to store all tasks on the cloud
+- sync - data integrity between local and cloud
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Components
 
-## Running unit tests
+App
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- acts as container for tasksLists and nav
+- stores metadata and state
+- enables add-ons (WIP)
 
-## Running end-to-end tests
+tasksList
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- contains a grouping of tasks and their metadata
+- drag and drop functionality (TBD)
 
-## Further help
+Task
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- states
+- can be nested
+- can be modified
+
+```
+|app
+|
+|-task
+| |-task
+| |-task
+```

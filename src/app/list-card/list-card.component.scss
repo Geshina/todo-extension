@@ -1,0 +1,18 @@
+mat-card {
+  max-height: 32rem;
+}
+mat-card-header {
+  align-items: center;
+  justify-content: space-between;
+}
+mat-card-content {
+  padding: 0px;
+}
+#add_task {
+  width: 100%;
+  justify-content: start;
+  border-radius: 0px;
+}
+mat-tree-node {
+  min-height: 32px;
+}

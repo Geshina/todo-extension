@@ -1,0 +1,23 @@
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title> My Tasks </mat-card-title>
+    <button mat-icon-button disabled [matMenuTriggerFor]="menu">
+      <mat-icon fontSet="material-symbols-outlined">more_vert</mat-icon>
+    </button>
+    <mat-menu #menu> </mat-menu>
+  </mat-card-header>
+
+  <mat-card-content>
+    <mat-selection-list>
+      <button mat-button id="add_task">
+        <mat-icon fontSet="material-symbols-outlined">add_task</mat-icon>
+        <p>Add a task</p>
+      </button>
+
+      <app-task></app-task>
+      <app-task></app-task>
+    </mat-selection-list>
+
+    <app-completed-tree></app-completed-tree>
+  </mat-card-content>
+</mat-card>
