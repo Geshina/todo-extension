@@ -1,49 +1,43 @@
-# Angular Google Tasks Extension
+# Google Tasks Extension
 
-graphic interface to replace the plain home tab with the to-do from your google tasks
+A Chrome extension that replaces the default homepage with a todo app built using Angular Material and integrated with Google Tasks through their API.
 
-[Github Repo](https://github.com/Geshina/todo-extension)
+## Table of Contents
+
+- [To-do](#to-do)
+- [Overview](#overview)
+- [Services](#services)
+- [Components](#components)
 
 ## To-do
 
-- [x] Architecture
-- [ ] update readme
-- [ ] get on with commits
-- [ ] UI | material | existing components
-- [ ] AUTH
-- [ ] Local storage
-- [ ] Google tasks API
+- [x] Update documentation
+- [x] Push changes
+- [ ] Implement NgRx state management
+- [ ] Create subtask component
+- [ ] Remove padding on completed tasks
 
-## Serivces
+## Overview
 
-- Auth - used to authenticated the user and provide a secure access to the users tasks
-- localStorage - to caches data and serves as backup for offline
-- googleTasks - to store all tasks on the cloud
-- sync - data integrity between local and cloud
+NgRx is used for state management, allowing all logic to flow from the components/UI to the services through its reducer pattern.
+
+**Local:** Manages the state between the components and local storage.
+
+**Cloud (Syncing):** Handles syncing data from local storage to the cloud, ensuring data integrity.
+
+**Auth:** Manages the state for authentication services.
+
+## Services
+
+- **TaskService:** Manages CRUD operations for tasks.
+- **SyncService:** Manages synchronization between local storage and the cloud.
+- **AuthService:** Handles user authentication and authorization.
+- **GoogleTasksAPIService:** Communicates with the Google Tasks API.
+- **Notification/ErrorService:** Manages notifications and error handling.
 
 ## Components
 
-App
-
-- acts as container for tasksLists and nav
-- stores metadata and state
-- enables add-ons (WIP)
-
-tasksList
-
-- contains a grouping of tasks and their metadata
-- drag and drop functionality (TBD)
-
-Task
-
-- states
-- can be nested
-- can be modified
-
-```
-|app
-|
-|-task
-| |-task
-| |-task
-```
+- **List:** Displays a collection of tasks and provides operations such as filtering.
+- **Task:** Represents an individual task.
+- **Subtask:** Represents an indented subtask within a task.
+- **Menu:** Provides settings and authentication options.
