@@ -1,5 +1,5 @@
 mat-card {
-  max-height: 32rem;
+  min-height: 24rem;
 }
 mat-card-header {
   align-items: center;
@@ -12,7 +12,4 @@ mat-card-content {
   width: 100%;
   justify-content: start;
   border-radius: 0px;
-}
-mat-tree-node {
-  min-height: 32px;
 }

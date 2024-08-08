@@ -4,21 +4,24 @@ import { MatIcon } from '@angular/material/icon';
 import {
   MatSidenavContainer,
   MatSidenavContent,
-  MatSidenav,
+  MatSidenavModule,
 } from '@angular/material/sidenav';
 import { MatToolbar } from '@angular/material/toolbar';
-import { SidenavComponent } from './sidenav/sidenav.component';
 import { ListCardComponent } from './list-card/list-card.component';
+import { MatButtonModule } from '@angular/material/button';
+import { SidenavComponent } from './sidenav/sidenav.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
+    SidenavComponent,
+    MatButtonModule,
     MatIcon,
     MatToolbar,
     MatSidenavContainer,
     MatSidenavContent,
-    MatSidenav,
-    SidenavComponent,
+    MatSidenavModule,
     ListCardComponent,
     RouterOutlet,
   ],

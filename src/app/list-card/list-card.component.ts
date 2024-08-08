@@ -6,6 +6,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { CompletedTreeComponent } from '../completed-tree/completed-tree.component';
+import { CompletedComponent } from "../completed/completed.component";
 
 @Component({
   selector: 'app-list-card',
@@ -18,7 +19,8 @@ import { CompletedTreeComponent } from '../completed-tree/completed-tree.compone
     MatCardModule,
     TaskComponent,
     CompletedTreeComponent,
-  ],
+    CompletedComponent
+],
   templateUrl: './list-card.component.html',
   styleUrl: './list-card.component.scss',
 })

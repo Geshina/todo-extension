@@ -1,14 +1,14 @@
 <mat-toolbar>
-  <mat-icon fontSet="material-symbols-outlined" (click)="sidenav.toggle()"
-    >menu</mat-icon
-  >
+  <button mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon fontSet="material-symbols-outlined">menu</mat-icon>
+  </button>
 </mat-toolbar>
 <mat-sidenav-container>
-  <mat-sidenav #sidenav mode="side">
+  <mat-sidenav mode="side" #sidenav>
     <app-sidenav></app-sidenav>
   </mat-sidenav>
-
   <mat-sidenav-content>
+    <app-list-card></app-list-card>
     <app-list-card></app-list-card>
     <app-list-card></app-list-card>
   </mat-sidenav-content>

@@ -13,8 +13,7 @@ A Chrome extension that replaces the default homepage with a todo app built usin
 
 - [x] Update documentation
 - [x] Push changes
-- [ ] Reorganize folder structure
-- [ ] Make Components
+- [ ] Custom task comp
 - [ ] Connect with API
 - [ ] Modify components to be reactive with local data
 - [ ] Remove padding on completed tasks
